@@ -1,0 +1,19 @@
+[dir=rtl] salla-slider.photos-slider .swiper{padding-left:0!important}salla-slider.photos-slider .swiper-slide{margin-left:0!important;margin-right:0!important;width:100%!important}.carousel-slider:has(img[data-src="https://cdn.salla.sa/form-builder/lDboe3QT6Qxkjn1zanaN0Qa7imIXbgMc1F9YDMpp.webp"]) .swiper-wrapper>div{padding-left:0!important;padding-right:0!important}.s-block:has(img[data-src="https://cdn.salla.sa/form-builder/lDboe3QT6Qxkjn1zanaN0Qa7imIXbgMc1F9YDMpp.webp"]){margin-top:0!important}@media(max-width:720px){.content-area-wrap.flex.items-center.w-full.lg\:w-1\/2.relative.py-12.\32 xl\:py-20{display:none}}.mainmenu--default .main-menu li>a{font-size:.775rem!important}
+.bg-left, .bg-right {
+    background-position: unset !important;
+}
+@media (min-width: 1024px) {
+    .lg\:w-\[50vw\] {
+        width: 42vw !important;
+    }
+}
+section.s-block.s-block--full-bg.s-block--features.relative.py-16.\!mt-0 {
+text-align: center;
+}
+section.s-block.s-block--full-bg.s-block--features.relative.py-16.\!mt-0:before {
+  content: "مميزاتنا";
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
