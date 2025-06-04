@@ -41,7 +41,7 @@
 /* Header */
 .header-inner.inner.bg-white.da-bgm,
 .angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
-  background-color: var(--main-bg);
+  background-color: var(--main-color);
 }
 
 /* Text */
@@ -51,7 +51,6 @@
 p.text-gray-400.mb-2\.5.md\:mb-0,
 .store-footer a:hover,
 a.mburger.mburger--collapse.flex.items-start.me-1,
-h4.text-center.text-base.md\:text-lg.da-tm,
 .store-footer a {
   color: var(--main-color) !important;
 }
