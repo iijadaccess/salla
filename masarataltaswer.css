@@ -1,0 +1,114 @@
+:root {
+  --main-bg: #000;
+  --main-color: #fff;
+  --accent-color: #ff0e0e;
+  --hover-glow: #ffd700;
+  --transition-speed: 0.3s;
+}
+
+/* Products */
+.s-product-card-content-footer salla-add-product-button .s-button-outline {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  border: 1px solid transparent;
+  transition: all var(--transition-speed) ease;
+}
+
+.s-product-card-content-footer salla-add-product-button .s-button-outline::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  transition: all 0.5s ease;
+}
+
+.s-product-card-content-footer salla-add-product-button .s-button-outline:hover::before {
+  left: 100%;
+  transition: all 0.6s ease;
+}
+
+/* Header */
+.header-inner.inner.bg-white.da-bgm {
+  background-color: var(--main-bg);
+}
+
+/* Text */
+.footer-profile p,
+.store-footer h3,
+.store-footer .footer-container .footer-list a,
+p.text-gray-400.mb-2\.5.md\:mb-0,
+.store-footer a:hover,
+a.mburger.mburger--collapse.flex.items-start.me-1,
+.store-footer a {
+  color: var(--main-color) !important;
+}
+
+.is_large .header-btn .sicon-search,
+.is_large .header-btn .sicon-user,
+.is_large .s-cart-summary-wrapper i,
+.s-cart-summary-total,
+.sicon-menu {
+  color: var(--main-color);
+}
+
+.bottom-header-buttons .sicon-search,
+.bottom-header-buttons .sicon-user,
+.bottom-header-buttons .sicon-add,
+.bottom-header-buttons .s-cart-summary-total {
+  color: var(--main-bg) !important;
+}
+
+/* s-cart */
+.s-cart-summary-count {
+  background-color: var(--accent-color);
+  color: #ebe1e1;
+}
+.angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
+  background-color: #f5f5f5;
+}
+
+/* Speed */
+* {
+  scroll-behavior: smooth;
+}
+img {
+  loading: lazy;
+}
+.animate__fadeIn,
+.animate__zoomIn,
+.animate__slideInUp {
+  animation: none !important;
+}
+.spinner, .loading-overlay {
+  display: none !important;
+}
+
+/* Buttons */
+.s-button-element {
+  transition: all var(--transition-speed) ease-in-out;
+}
+.s-button-element:hover {
+  box-shadow: 0 0 12px var(--hover-glow);
+  transform: scale(1.02);
+}
+
+/* For Phone */
+@media (max-width: 520px) {
+  .slider-bg.transition-opacity.bg-center.bg-cover.relative {
+    height: 5rem !important;
+  }
+  .container.-mt-32.md\:-mt-44.relative.overflow-hidden {
+    margin-top: 0px;
+  }
+}
