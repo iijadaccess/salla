@@ -105,7 +105,7 @@ img {
 /* For Phone */
 @media (max-width: 520px) {
   .slider-bg.transition-opacity.bg-center.bg-cover.relative {
-    height: 10rem;
+    height: 5rem;
   }
   .container.-mt-32.md\:-mt-44.relative.overflow-hidden {
     margin-top: 0px;
