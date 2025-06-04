@@ -39,8 +39,7 @@
 }
 
 /* Header */
-.header-inner.inner.bg-white.da-bgm,
-.angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
+.header-inner.inner.bg-white.da-bgm {
   background-color: var(--main-color);
 }
 
