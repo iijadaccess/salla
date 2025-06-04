@@ -101,3 +101,36 @@ h4.text-center.text-base.md\:text-lg.da-tm,
   margin-top: 0px;
 }
 }
+
+/* ============================
+(Page Speed)
+============================= */
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  loading: lazy;
+}
+
+/* تعطيل الأنيميشن الثقيلة */
+.animate__fadeIn,
+.animate__zoomIn,
+.animate__slideInUp {
+  animation: none !important;
+}
+
+/* تحسين الهيدر */
+
+/* تحسين زر الشراء */
+.s-button-element {
+  transition: all 0.3s ease-in-out;
+}
+.s-button-element:hover {
+  box-shadow: 0 0 12px #ffd700;
+  transform: scale(1.02);
+}
+/* إخفاء أي عناصر تحميل غير ضرورية */
+.spinner, .loading-overlay {
+  display: none !important;
+}
