@@ -40,7 +40,7 @@
 
 /* Header */
 .header-inner.inner.bg-white.da-bgm {
-  background-color: var(--main-color);
+  background-color: var(--main-bg);
 }
 
 /* Text */
