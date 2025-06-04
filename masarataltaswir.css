@@ -74,6 +74,9 @@ a.mburger.mburger--collapse.flex.items-start.me-1,
   background-color: var(--accent-color);
   color: #ebe1e1;
 }
+.angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
+  background-color: var(--main-color);
+}
 
 /* Speed */
 * {
