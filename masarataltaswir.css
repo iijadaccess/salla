@@ -1,13 +1,19 @@
-/* ============================
-(Products Card)
-============================= */
+:root {
+  --main-bg: #000;
+  --main-color: #fff;
+  --accent-color: #ff0e0e;
+  --hover-glow: #ffd700;
+  --transition-speed: 0.3s;
+}
+
+/* Products */
 .s-product-card-content-footer salla-add-product-button .s-button-outline {
   position: relative;
   overflow: hidden;
-  background-color: #000;
-  color: #FFF;
+  background-color: var(--main-bg);
+  color: var(--main-color);
   border: 1px solid transparent;
-  transition: all 0.3s ease;
+  transition: all var(--transition-speed) ease;
 }
 
 .s-product-card-content-footer salla-add-product-button .s-button-outline::before {
@@ -32,17 +38,13 @@
   transition: all 0.6s ease;
 }
 
-/* ============================
-(feature section)
-============================= */
+/* Header */
+.header-inner.inner.bg-white.da-bgm,
 .angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
-  background-color: #000;
-  padding: 35px;
+  background-color: var(--main-bg);
 }
 
-/* ============================
-(Footer Colors)
-============================= */
+/* Text */
 .footer-profile p,
 .store-footer h3,
 .store-footer .footer-container .footer-list a,
@@ -51,86 +53,61 @@ p.text-gray-400.mb-2\.5.md\:mb-0,
 a.mburger.mburger--collapse.flex.items-start.me-1,
 h4.text-center.text-base.md\:text-lg.da-tm,
 .store-footer a {
-  color: #FFF !important;
+  color: var(--main-color) !important;
 }
 
-/* ============================
-(Header)
-============================= */
-.header-inner.inner.bg-white.da-bgm {
-  background-color: #000;
-}
-
-/* ============================
-(Header Icons)
-============================= */
 .is_large .header-btn .sicon-search,
 .is_large .header-btn .sicon-user,
 .is_large .s-cart-summary-wrapper i,
 .s-cart-summary-total,
 .sicon-menu {
-  color: #FFF;
+  color: var(--main-color);
 }
 
-/* ============================
-(Card Count)
-============================= */
-.s-cart-summary-count {
-  background-color: #ff0e0e;
-  color: #ebe1e1;
-}
-
-/* ============================
-(Botton Header)
-============================= */
 .bottom-header-buttons .sicon-search,
 .bottom-header-buttons .sicon-user,
 .bottom-header-buttons .sicon-add,
 .bottom-header-buttons .s-cart-summary-total {
-  color: #000 !important;
+  color: var(--main-bg) !important;
 }
 
-/* ============================
-(Media Query Phone )
-============================= */
-@media (max-width: 520px) {
-  .slider-bg.transition-opacity.bg-center.bg-cover.relative {
-    height: 10rem;
-  }
-  .container.-mt-32.md\:-mt-44.relative.overflow-hidden {
-  margin-top: 0px;
-}
+/* s-cart */
+.s-cart-summary-count {
+  background-color: var(--accent-color);
+  color: #ebe1e1;
 }
 
-/* ============================
-(Page Speed)
-============================= */
+/* Speed */
 * {
   scroll-behavior: smooth;
 }
-
 img {
   loading: lazy;
 }
-
-/* تعطيل الأنيميشن الثقيلة */
 .animate__fadeIn,
 .animate__zoomIn,
 .animate__slideInUp {
   animation: none !important;
 }
-
-/* تحسين الهيدر */
-
-/* تحسين زر الشراء */
-.s-button-element {
-  transition: all 0.3s ease-in-out;
-}
-.s-button-element:hover {
-  box-shadow: 0 0 12px #ffd700;
-  transform: scale(1.02);
-}
-/* إخفاء أي عناصر تحميل غير ضرورية */
 .spinner, .loading-overlay {
   display: none !important;
+}
+
+/* Buttons */
+.s-button-element {
+  transition: all var(--transition-speed) ease-in-out;
+}
+.s-button-element:hover {
+  box-shadow: 0 0 12px var(--hover-glow);
+  transform: scale(1.02);
+}
+
+/* For Phone */
+@media (max-width: 520px) {
+  .slider-bg.transition-opacity.bg-center.bg-cover.relative {
+    height: 10rem;
+  }
+  .container.-mt-32.md\:-mt-44.relative.overflow-hidden {
+    margin-top: 0px;
+  }
 }
