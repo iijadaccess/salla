@@ -4,9 +4,6 @@
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
   loading: lazy;
 }
 
@@ -18,10 +15,6 @@ img {
 }
 
 /* تحسين الهيدر */
-.header-inner.inner {
-  background-color: #000 !important;
-  color: #fff;
-}
 
 /* تحسين زر الشراء */
 .s-button-element {
@@ -31,25 +24,6 @@ img {
   box-shadow: 0 0 12px #ffd700;
   transform: scale(1.02);
 }
-
-/* تحسين النصوص */
-body, p, h1, h2, h3, h4, h5 {
-  color: #333;
-  font-family: 'Tajawal', sans-serif;
-}
-
-/* فوتر أنيق */
-.store-footer {
-  background: #111;
-  color: #eee;
-}
-.store-footer a {
-  color: #ccc;
-}
-.store-footer a:hover {
-  color: #fff;
-}
-
 /* إخفاء أي عناصر تحميل غير ضرورية */
 .spinner, .loading-overlay {
   display: none !important;
