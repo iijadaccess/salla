@@ -1,0 +1,103 @@
+/* ============================
+(Products Card)
+============================= */
+.s-product-card-content-footer salla-add-product-button .s-button-outline {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #FFF;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.s-product-card-content-footer salla-add-product-button .s-button-outline::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  transition: all 0.5s ease;
+}
+
+.s-product-card-content-footer salla-add-product-button .s-button-outline:hover::before {
+  left: 100%;
+  transition: all 0.6s ease;
+}
+
+/* ============================
+(feature section)
+============================= */
+.angel-feature.flex-center.flex-col.angel_anime.animate__.animate__fadeIn.slowx1 {
+  background-color: #000;
+  padding: 35px;
+}
+
+/* ============================
+(Footer Colors)
+============================= */
+.footer-profile p,
+.store-footer h3,
+.store-footer .footer-container .footer-list a,
+p.text-gray-400.mb-2\.5.md\:mb-0,
+.store-footer a:hover,
+a.mburger.mburger--collapse.flex.items-start.me-1,
+h4.text-center.text-base.md\:text-lg.da-tm,
+.store-footer a {
+  color: #FFF !important;
+}
+
+/* ============================
+(Header)
+============================= */
+.header-inner.inner.bg-white.da-bgm {
+  background-color: #000;
+}
+
+/* ============================
+(Header Icons)
+============================= */
+.is_large .header-btn .sicon-search,
+.is_large .header-btn .sicon-user,
+.is_large .s-cart-summary-wrapper i,
+.s-cart-summary-total,
+.sicon-menu {
+  color: #FFF;
+}
+
+/* ============================
+(Card Count)
+============================= */
+.s-cart-summary-count {
+  background-color: #ff0e0e;
+  color: #ebe1e1;
+}
+
+/* ============================
+(Botton Header)
+============================= */
+.bottom-header-buttons .sicon-search,
+.bottom-header-buttons .sicon-user,
+.bottom-header-buttons .sicon-add,
+.bottom-header-buttons .s-cart-summary-total {
+  color: #000 !important;
+}
+
+/* ============================
+(Media Query Phone )
+============================= */
+@media (max-width: 520px) {
+  .slider-bg.transition-opacity.bg-center.bg-cover.relative {
+    height: 10rem;
+  }
+  .container.-mt-32.md\:-mt-44.relative.overflow-hidden {
+  margin-top: 0px;
+}
+}
