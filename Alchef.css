@@ -206,14 +206,22 @@ section.s-block--features.container:before {
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
+.footer-is-light .store-footer .store-footer__inner, .store-footer .contact-social ul {
+    background: #82120fe8;
+}
+
 .store-footer h3 {
-  background-color: #585454 !important;
-  color: var(--main-color) !important;
-  border-radius: 8px;
+  background-color: var(--third-color) !important;
+  color: var(--second-color) !important;
+  border-radius: 15px;
   font-weight: bold;
   padding: 0.3rem 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   width: 100%;
+}
+
+.store-footer a, .store-footer p {
+    color: var(--third-color)
 }
 
 p.text-gray-400 {
