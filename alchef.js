@@ -1,10 +1,10 @@
 // ✅ WhatApp Widget
-const link = Object.assign(document.createElement('a'), {
-    href: "https://wa.me/+966557378584",
-    target: "_blank",
-    innerHTML: `<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="position:fixed;bottom:20px;right:20px;width:60px;height:60px;cursor:pointer;z-index:999">`
-  });
-  document.body.appendChild(link);
+let a=document.createElement('a'),i=document.createElement('img');
+a.href="https://wa.me/966557378584";a.target="_blank";
+Object.assign(a.style,{position:"fixed",bottom:"20px",right:"20px",zIndex:"999",cursor:"pointer"});
+Object.assign(i,{src:"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",width:60,height:60});
+a.appendChild(i);document.body.appendChild(a);
+;
 ///////////////////////////////
 // CopyRights
 document.querySelector('.copyright-text').innerHTML = `صنع ${new Date().getFullYear()} | الشيف احمد ابو هاني | بواسطة شركة <a href="https://iijadagency.com" target="_blank">ايجاد</a>`;
