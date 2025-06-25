@@ -1,0 +1,133 @@
+/* ==============================
+   🌐 Google Fonts
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/* ==============================
+   🧩 Root Variables
+================================ */
+:root {
+  --main-color: #000;
+  --second-color: #e556e5;
+  --third-color: #fff;
+  --hover-color: #a58c77;
+  --fourth-color: #67432d;
+  --footer-bg: #fef4e0;
+  --logo: url(https://cdn.salla.sa/qpged/upDdFofYVlzl6214unltboba2gxvbqCUbiywmnJI.jpg);
+}
+
+/* ==============================
+   🖋️ Global Styles
+================================ */
+*, body, html {
+  font-family: 'Cairo', sans-serif !important;
+}
+.section--title {
+  font-family: unset !important;
+}
+
+/* ==============================
+   🧷 Logo + Navigation
+================================ */
+.logo {
+  max-height: 4rem !important;
+  transition: 0.8s;
+}
+@media (min-width: 1024px) {
+  .main-menu li > a {
+    padding: 0 0.55rem !important;
+  }
+}
+
+/* ==============================
+   📦 Product Listing
+================================ */
+.container.banner:first-of-type {
+  width: 100%;
+}
+.products-listing.eq-height .product {
+  height: 400px;
+}
+@media (max-width: 520px) {
+  .products-listing.eq-height .product {
+    height: 300px !important;
+  }
+}
+
+/* ==============================
+   ✨ Features Section
+================================ */
+.s-block--features__item {
+  background: var(--second-color) !important;
+}
+.feature-item__icon {
+  background: var(--fourth-color);
+}
+.feature-item h3,
+.salla-theme_1 footer .footer-sub .footer-wrapper p,
+.salla-theme_1 footer .footer-sub .footer-wrapper a {
+  color: var(--fourth-color);
+}
+.feature-item p {
+  display: none;
+}
+.col-sm-6.col-md-4.feature-item {
+  width: 33.33333%;
+  display: inline-block;
+}
+
+/* ==============================
+   🦶 Footer
+================================ */
+.footer-main {
+  background-color: var(--footer-bg);
+}
+.store-contact a,
+.footer-item p,
+.footer-title,
+footer .footer-main .footer-item .social__item a * {
+  color: var(--fourth-color);
+}
+@media (max-width: 780px) {
+  .footer-item, .store-contact {
+    text-align: center;
+  }
+}
+
+/* ==============================
+   📐 Layout Tweaks
+================================ */
+body:not(.salla-theme_6) .category-featured {
+  height: auto;
+  padding: 85.25% 0 0;
+}
+.section[data-type=banner] {
+  padding: 0 !important;
+}
+
+/* Responsive Column Tweaks */
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 50%;
+  }
+}
+@media (min-width: 520px) {
+  .col-sm-4.col-md-4 {
+    width: 20%;
+  }
+}
+@media (max-width: 519px) {
+  .col-sm-4.col-md-4 {
+    width: 32%;
+    display: inline-block;
+  }
+}
+.footer-main:before {
+  content: "";
+  display: block;
+  height: 110px;
+  width: 140px;
+  margin: auto auto 30px;
+  background: var(--logo) no-repeat center/contain;
+  animation: sigal 1.2s linear infinite;
+}
