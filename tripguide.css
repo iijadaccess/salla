@@ -90,7 +90,7 @@ p.da-tm.hidden.text-xl.md\:block.ms-1,
 .is_large .header-btn .sicon-user,
 .is_large .s-cart-summary-wrapper i {
   font-size: 1.2rem !important;
-  color: var(--main-bg);
+  color: var(--text-black);
 }
 
 /* ✅ Footer styles */
