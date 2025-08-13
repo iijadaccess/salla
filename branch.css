@@ -324,3 +324,7 @@ p.text-gray-400 {
 .s-block--features__item:first-child {
   grid-column: unset !important;
 }
+
+.s-product-card-image-contain {
+    object-fit: cover;
+}
