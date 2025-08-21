@@ -1,1 +1,16 @@
 @import url('https://cdn.jsdelivr.net/gh/iijadaccess/salla@main/NTFC.css');
+
+//////////////////////////////////////////////////////////////////////////
+.md\:flex.items-center.justify-between.py-4.container.text-center::before {
+    content: "بواسطة | شركة ايجاد";
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--third-color) !important;
+    padding: 6px !important;
+    display: inline-block;
+    cursor: pointer; /* يخلي الماوس زي اللينك */
+}
+
+document.querySelector('.text-center').addEventListener('click', function() {
+    window.open('https://iijadagency.com', '_blank'); 
+});
