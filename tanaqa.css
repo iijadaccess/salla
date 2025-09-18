@@ -28,7 +28,7 @@ body {
         color: var(--second-color);
     }
 }
-i.header-btn__icon.sicon-user-circle, .header-btn__icon.icon {color: var(--second-color)}
+i.header-btn__icon.sicon-user-circle, .header-btn__icon.icon, i.sicon-menu.text-primary.text-2xl {color: var(--second-color)}
 
 .s-block:first-of-type .container {
   max-width: 100% !important;
