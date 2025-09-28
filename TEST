@@ -14,3 +14,9 @@
 document.querySelector('.text-center').addEventListener('click', function() {
     window.open('https://iijadagency.com', '_blank'); 
 });
+
+
+
+//////////////////////////////////////////////////////////////////////////
+Whatsapp Icon
+https://tags.suagencia.online/whatsapp/whatsapp-icon.svg
