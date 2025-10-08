@@ -377,3 +377,7 @@ body.loading *:not(.loader) { display: none !important; }
         max-width: 85%;
     }
 }
+.s-advertisement-content {
+    padding-bottom: .225rem;
+    padding-top: .425rem;
+}
