@@ -1,0 +1,226 @@
+/* ==============================
+   🎨 Root Variables
+============================== */
+:root {
+  --main-color: #012a61;
+  --second-color: #000;
+  --third-color: #fff;
+  --hover-color: #053b85;
+  --dm-text-sec: #000;
+  --dm-text-main: #000;
+}
+@media(max-width: 520px) {
+.index .app-inner .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+/* ==============================
+   🧭 Header & Navigation
+============================== */
+.header-is-dark #mainnav,
+.top-navbar {
+  background: var(--hover-color) !important;
+}
+section#fullscreen-banner-0 {
+    margin-top: 5px;
+}
+
+button.header-btn.header-signInBtn.px-2.hdi-btn-left.hidden.lg\:-order-1.lg\:mx-2 {
+  background: var(--main-color) !important;
+}
+
+.navbar-brand {
+  background-color: var(--hover-color);
+  display: inline-block;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.navbar-brand img {
+  mix-blend-mode: screen !important;
+  background-color: #003399 !important;
+}
+
+@media (min-width: 640px) {
+  .navbar-brand img {
+    max-height: 6rem;
+  }
+}
+
+/* ==============================
+   🏷️ Banner Section
+============================== */
+.banner-texts {
+  background-color: var(--main-color) !important;
+  border-radius: 0 0 20% 20%;
+  margin-top: 0 !important;
+  width: 75%;
+  place-self: center;
+}
+@media(min-width: 520px) {
+.sq-awesome-banners .banner-outer .banner-texts .banner__title {
+  line-height: 3rem;
+}
+}
+
+/* ==============================
+   💥 Best Offers Section
+============================== */
+.s-block--best-offers {
+  background-color: var(--main-color);
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.product-block__info {
+  background-color: var(--main-color);
+}
+
+.prod-title-clipped custom-salla-product-card .product-block__info .title {
+  color: #fff !important;
+}
+
+/* ==============================
+   🧩 Buttons & Effects
+============================== */
+.s-button-btn {
+  background-color: var(--main-color) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-button-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg, #fff0 30%, #fffc, #fff0 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.s-button-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60%,
+  to {
+    left: 100%;
+  }
+}
+
+#app.btns-gradient .btn-gradient,
+body#app.btns-gradient .s-button-primary {
+  background: var(--hover-color) !important;
+}
+
+/* ==============================
+   🧠 Product & Feature Cards
+============================== */
+.enhanced-product-card {
+  background-color: var(--main-color) !important;
+}
+
+#app.product-card-cover:not(.product-ratio-unset) .product-block__thumb img {
+  background: #fff;
+}
+
+.enhanced-features .feature-icon {
+  min-width: 8rem;
+  min-height: 8rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+#app.f-icon-gradient .feature-icon {
+  background: unset !important;
+}
+
+/* ==============================
+   💬 Testimonials
+============================== */
+.special-testimonial__inner {
+  background-color: #eee !important;
+  border-radius: 20px;
+}
+
+.special-testimonial__inner .special-testimonial__text .special-testimonial__text_up .special-testimonial__info h4,
+.special-testimonial__inner .special-testimonial__text .special-testimonial__text_up .special-testimonial__info div,
+.special-testimonial__inner .special-testimonial__text .special-testimonial__text_down,
+.s-block h3,
+.banner__title,
+h4 .counter-container .injaz_count.dm-text-main {
+  color: var(--main-color) !important;
+}
+
+/* ==============================
+   📘 Know More Section
+============================== */
+.know-more-inner.bg-primary.dm-bg-sec.text-center.px-2.py-6.lg\:p-8.rounded-xl {
+  background-color: var(--main-color) !important;
+}
+
+/* ==============================
+   ⚫ Dark Mode Adjustments
+============================== */
+.dark .dm-bg-sec {
+  background-color: #fff !important;
+}
+
+.dark .dm-text-main,
+.dark .product-single.product-des-force-light:not(.cls-1) .product__description span,
+.dark .product-single.product-des-force-light:not(.cls-2) .product__description strong,
+.dark #btn-show-more {
+  color: #000 !important;
+}
+
+.dark #app .s-social-share-btn button,
+.dark #app .btn--wishlist button {
+  background: #fff !important;
+}
+
+/* ==============================
+   🦶 Footer
+============================== */
+footer,
+footer * {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+footer a {
+  color: #000 !important;
+}
+
+footer a:hover {
+  color: #555 !important;
+}
+
+/* ==============================
+   ✨ General Text Overrides
+============================== */
+h3.banner__title.dm-text-main.font-bold,
+.s-slider-block__title h2:where([dir="rtl"], [dir="rtl"] *),
+.dark salla-products-slider .s-slider-block__display-all,
+.know-more-inner *,
+h3.mx-2.my-1.k-title.custom-s.title.dm-text-main,
+.injaz.mx-1.mb-2.lg\:mx-4.min-w-\[50px\] * {
+  color: #fff !important;
+}
+
+/* ==============================
+   ✨ Cart
+============================== */
+.cart-total-wrapper.shadow-default.bg-white.lm-bg-sec.dm-bg-sec.dm-text-main.p-5.xs\:p-7.rounded-md.mb-5.relative.transition-height.duration-1000, #app.quantity-inputs-old-shape .s-quantity-input-input, div#free-shipping{
+    background-color: #FFF !important;
+}
+.cart-total-outer.sticky.top-24.w-full.lg\:w-96.rtl\:lg\:mr-8.ltr\:lg\:ml-8 {
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
