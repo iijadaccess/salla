@@ -1,0 +1,363 @@
+/* Add custom CSS styles below */ 
+/* Add custom CSS styles below */ 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+:root {
+    --main-color: #f37215;
+    --second-color: #000;
+    --third-color: #fff;
+    --hover-color: #0d0e0d;
+    --logo: url(https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/Xeawev/Yg6O7HIQFslrptjCPLvF6ndmmdawGDcuIXT98Eeo.png)
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #FFF;
+}
+
+.navbar-brand img, .main-nav-container.fixed-pinned .navbar-brand img {
+    max-height: 4rem;
+}
+
+.topnav-is-dark .top-navbar .s-search-input {
+    background: var(--third-color);
+}
+i.header-btn__icon.sicon-user-circle, .header-btn__icon.icon, i.sicon-menu.text-primary.text-2xl {color: var(--main-color)}
+
+.s-block:first-of-type .container {
+  max-width: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.s-block:not(:first-of-type),
+.s-block--features__item,
+.s-block--features__item:hover {
+  margin-top: 30px;
+}
+.s-block {
+  margin-top: unset;
+}
+
+/* Navbar & Footer */
+.store-footer h3,
+.topnav-is-dark .top-navbar {
+    background-color: var(--main-color) !important;
+}
+
+.s-search-input-wrapper {
+    box-shadow: var(--main-color) -1px 2px 16px;
+}
+
+.s-product-card-content-title a,
+.s-product-card-price,
+.s-search-icon svg,
+.s-slider-block__title h2,
+.store-footer a,
+.store-footer p,
+i.header-btn__icon.icon.sicon-shopping-bag,
+{
+    color: var(--main-color);
+}
+
+
+.copyright-text p,
+.copyright-text p a {
+    color: #FFF !important;
+}
+
+/* Buttons */
+.s-button-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  outline: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(1, 42, 97, 0.3);
+  transition: all 0.35s ease;
+}
+
+.s-button-btn:hover {
+  color: var(--third-color) !important;
+  transform: translateY(-2px); /* حركة خفيفة للأعلى */
+  box-shadow: 0 10px 20px rgba(1, 42, 97, 0.4); /* ظل أعمق أثناء الهوفر */
+}
+
+/* ألوان الزر */
+.s-button-element:not(:disabled):not([loading]) {
+  pointer-events: auto;
+  border-color: var(--main-color);
+  color: var(--second-color);
+  background: var(--third-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.s-button-element:not(:disabled):not([loading]):hover {
+  border-color: var(--main-color);
+  color: var(--third-color);
+  background-color: var(--second-color);
+}
+
+/* لمعان خفيف */
+.s-button-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0;
+  left: -100px;
+  opacity: 0.5;
+  background-image: linear-gradient(120deg, transparent 30%, #ffffff80, transparent 70%);
+}
+
+.s-button-btn:hover::before {
+  animation: shine 1.5s ease-out;
+}
+
+@keyframes shine {
+  0% { left: -100px; }
+  100% { left: 100%; }
+}
+
+
+/* Slider */
+.s-slider-block__title h2::after {
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    content: "";
+    display: block;
+    background-color: var(--main-color);
+}
+.s-slider-block__title h2:where([dir=rtl],[dir=rtl] *) {
+    padding-left: 0 !important;
+}
+
+/* Cards */
+.s-product-card-content-sub:hover,
+.s-product-card-content-title a:hover,
+.s-products-slider-card:hover {
+    color: var(--hover-color);
+}
+.s-product-card-content {
+    background-color: var(--main-color)
+}
+.s-product-card-content a, .s-product-card-price {
+    color: var(--third-color) !important;
+}
+.s-product-card-vertical {
+    transition: .3s ease-out;
+    border: 1px solid var(--main-color);
+}
+.s-product-card-vertical:hover {
+    box-shadow: var(--hover-color) -1px 2px 16px;
+}
+.s-product-card-image img { max-width: 100%; }
+.s-product-card-content { color: #000; }
+.s-product-card-content a {
+    color: var(--main-color);
+    text-align: center;
+}
+.s-product-card-content-sub {
+    justify-content: center;
+    color: var(--hover-color);
+}
+.s-product-card-vertical .s-product-card-wishlist-btn button {
+    background-color: var(--hover-color) !important;
+}
+
+/* Banners */
+.banner-entry {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .banner-entry { height: 350px; }
+}
+@media (max-width: 720px) {
+  .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 {
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+  .grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 .banner-entry {
+      height: 100px !important;
+  }
+}
+
+/* Footer */
+.store-footer {background: #FFF}
+.footer-is-light .store-footer,
+.store-footer .contact-social ul,
+.store-footer__inner {
+    background: #f69148 !important;
+}
+.store-footer h3 {
+  background-color: var(--third-color) !important;
+  color: var(--main-color) !important;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 0.3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  width: 100%;
+  text-align: center;
+}
+.s-menu-footer-list,
+p.max-w-sm.leading-6.mb-6 {
+  text-align: center;
+}
+.store-footer a,
+.store-footer p {
+    color: var(--third-color);
+}
+
+.store-footer .store-footer__inner:before {
+    content: "";
+    display: block;
+    height: 110px;
+    width: 110px;
+    margin: auto auto 20px;
+    background: var(--logo) no-repeat center / contain;
+    animation: sigal 1.2s linear infinite;
+    border-radius: 100%;
+    filter: brightness(0) invert(1) !important;
+    border: 1px solid #FFF;
+}
+
+@keyframes sigal {
+  0% { filter: drop-shadow(2px 4px 6px #504d46); }
+  100% { filter: none; }
+}
+.s-slider-nav-arrow,
+.header-btn__icon,
+.footer-is-light .store-footer .social-link,
+.store-footer a .rtl\:ml-2\.5 {
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.store-footer__inner { border-radius: 40px 40px 0 0 !important; }
+.copyright-text { color: #FFF; }
+.copyright-text > a { color: var(--second-color); }
+
+/* Features */
+.s-block--features__item,
+.s-block--features__item:hover {
+    margin-top: 20px;
+    box-shadow: 0 10px 17px rgba(0,0,0,.6), 10px 10px 20px rgba(0,0,0,.2);
+}
+.s-block--features__item .feature-icon {
+    background-color: var(--third-color);
+    height: 5rem;
+    width: 5rem;
+}
+.s-block--features__item .feature-icon i {
+    color: var(--main-color);
+    font-size: 60px;
+}
+section.s-block.s-block--features.container {
+    text-align: center;
+}
+section.s-block.s-block--features.container:before {
+    content: "مميزات المتجر";
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+/* Animations & performance */
+@keyframes fade-in {
+    0%,75% { opacity:1; transform:scale(1); }
+    100% { opacity:0; transform:scale(.1); }
+}
+@media (prefers-reduced-motion: reduce) {
+    * { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+}
+
+/* Layout Tweaks */
+@media only screen and (min-width:1024px){
+    .main-menu li>a {
+        padding-left:.55rem!important;
+        padding-right:.55rem;
+    }
+    salla-slider.photos-slider .swiper-slide { width:100%!important; }
+}
+@media (min-width:768px) {
+    salla-slider.photos-slider .swiper:where([dir=rtl],[dir=rtl] *) { padding-left:0!important; }
+}
+@media (max-width:1024px) {
+    salla-slider.photos-slider .swiper:where([dir=rtl],[dir=rtl] *) {
+        width:100%!important;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@media(min-width: 520px){
+    .container.grid.grid-col-1.lg\:grid-cols-6.gap-8.lg\:gap-6 {
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Lazy load */
+.lazy-container {
+    content-visibility: auto;
+    contain-intrinsic-size: 300px;
+}
+body.loading *:not(.loader) { display: none !important; }
+
+.s-contacts-list { align-items: center; }
+
+.md\:flex.items-center.justify-between.py-4.container.text-center {
+    background-color: var(--main-color) !important;
+    max-width: 100% !important;
+    place-content: center;
+    gap: 30px
+
+}
+
+section.s-block--slider-with-bg:nth-of-type(1) .slider-bg {
+  background: url("https://cdn.salla.sa/yourimage1.webp") no-repeat center center !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  max-height: 700px;
+}
+
+section.s-block--slider-with-bg:nth-of-type(2) .slider-bg {
+  background: url("https://cdn.salla.sa/yourimage2.webp") no-repeat center center !important;
+  background-size: cover !important;
+  height: 100vh !important;
+  max-height: 700px;
+}
+
+@media (max-width: 768px) {
+  section.s-block--slider-with-bg .slider-bg {
+    background-position: center top !important;
+    background-size: contain !important;
+    height: 300px !important;
+    max-height: none !important;
+  }
+
+  section.s-block--slider-with-bg .container {
+    padding-top: 40px !important;
+  }
+}
+.-mt-62 {
+    margin-top: -170px;
+}
+@media (max-width: 768px) {
+    section.s-block--slider-with-bg .slider-bg {
+        height: 246px !important;
+
+    }
+}
+button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-button-primary.s-button-loader-center  {
+    background: var(--main-color);
+    color: var(--third-color);
+}
+.copyright-text a {color: #FFF !important}
