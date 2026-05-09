@@ -1,0 +1,77 @@
+/* Add custom CSS styles below */ 
+:root {
+    --main: #45E9BA;
+    --second: #000102;
+}
+@media (max-width: 670px) {
+.IR_space-lg:first-of-type {
+    margin-top: 0rem;
+}
+}
+@media (min-width: 1280px) {
+    #IRT__irtiqa-slider-0 .container {
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+.IRT__form_content .s-product-card-content-footer salla-add-product-button .s-button-btn, .IRT__form_content .s-product-card-content-footer salla-add-product-button .s-button-icon {
+    background-color: var(--second) !important;
+    border-color: var(--second);
+}
+.testimonials-head .s-block__title-text, .testimonials-item__content h3 {
+    color: var(--second) !important;
+}
+.store-footer, .store-footer__inner {
+    background-color: #dafaf1 !important;
+}
+.s-contacts-icon svg {
+    fill: var(--second);
+}
+.header-btn__icon, .header-btn__icon {
+    background-color: #FFF !important;
+    color: var(--second) !important;
+}
+.s-block .flex.justify-center.items-center.flex-wrap{
+    display:grid !important;
+    grid-template-columns:repeat(8,minmax(0,1fr)) !important;
+    gap:0px !important;
+}
+
+.s-block .gr_cat{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+/* الجوال */
+@media (max-width:768px){
+
+    .s-block .flex.justify-center.items-center.flex-wrap{
+        grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+        gap:12px !important;
+    }
+
+}
+.s-block:has(img[src="https://cdn.files.salla.network/homepage/199305624/dbc32d9e-df2e-4da0-97f0-ec8ca59156d0.webp"]) .container::before {
+    content: "جميع الأقسام";
+    display: block;
+    color: var(--second);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.IR_space-lg {
+    margin-bottom: 0rem;
+}
+@media (min-width: 768px) {
+    .IR_space-lg {
+        margin-bottom: 4rem;
+    }
+}
+.IR_space-lg {
+    margin-top: 4rem;
+}
+.main-banner .bg-black\/40{
+    background:transparent !important;
+}
