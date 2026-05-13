@@ -1,0 +1,133 @@
+/* Add custom CSS styles below */ 
+:root {
+    --main: var(--color-primary);
+    --second: #004956;
+    --third: #e6ded0
+}
+.banner-square{
+    height: 320px !important;
+}
+
+.banner-square .box-img{
+    height: 100%;
+}
+
+.banner-square img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+.s-slider-swiper-wrapper{
+    align-items: stretch !important;
+}
+
+.banner-square{
+    display: flex;
+    height: auto !important;
+}
+
+.banner-square > div,
+.banner-square a,
+.banner-square .box-img{
+    height: 80%;
+}
+.faqs-list__item{
+    background: #e6ded0 !important;
+
+    border: none !important;
+    border-radius: 18px !important;
+}
+
+.faqs-list__item label{
+    color: #000 !important;
+    font-weight: 700;
+}
+
+.faq-answer,
+.faq-answer p{
+    color: #000 !important;
+}
+
+.faq-item{
+    background: #e6ded0 !important;
+    color: #000 !important;
+    backdrop-filter: blur(6px);
+}
+.banner-square .text-wrapper {
+    display: none;
+}
+.angel-feature .flex-center i, .angel-features .container .s-block__title div h2 {
+    color: #000 !important;
+}
+.s-angel-maps .container div h3 {
+    color: var(--second) !important;
+}
+.tabs__outline .tab-trigger.is-active {
+    background-color: var(--second) !important;
+    color: #FFF !important;
+    border-color: var(--second); 
+}
+.store-footer__inner.da-bgm  {
+    background: var(--third) !important;
+
+    padding: 80px 0;
+}
+.store-footer h3 {
+    color: var(--second);
+}
+.s-button-primary {
+    background-color: var(--second);
+    border-color: var(--second);
+    color: #FFF;
+}
+.s-product-card-content {
+    background-color: #FFF;
+}
+.multihome-tabs-wrapper li button:after {
+    background-color: #74cbe5;
+}
+i.sicon-menu.text-primary.text-2xl {
+    color: #74cbe5;
+}
+.s-cart-summary-count {
+    background: #74cbe5;
+}
+.s-block__title h2, .dark .s-block--banners .banner-square h3 {
+    text-align: center;
+     width: fit-content;
+    margin: auto;
+
+    background: linear-gradient(
+        to right,
+        #67c8ff 0%,
+        #f5a623 55%,
+        #ff9800 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: transparent;
+}
+@media(max-width: 670px) {
+  .navbar-brand img
+{
+    height: 1.5rem !important;
+}
+}
+
+.swiper:has(img[src="https://cdn.files.salla.network/homepage/2065955563/cc983763-522e-42d3-834e-1d9fcf2ea559.webp"]) .banner-square .box-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper:has(img[src="https://cdn.files.salla.network/homepage/2065955563/cc983763-522e-42d3-834e-1d9fcf2ea559.webp"]) .banner-square .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    display: block;
+}
